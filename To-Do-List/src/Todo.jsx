@@ -1,4 +1,5 @@
 import { useState } from "react"
+import './Todo.css'
 
 function Todo(){
 
@@ -25,7 +26,7 @@ function Todo(){
         setNewTodo(filterdata)
     }
 
-    
+
     return(
         <>
         <div className="container">
