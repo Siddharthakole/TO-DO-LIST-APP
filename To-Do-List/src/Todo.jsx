@@ -30,17 +30,18 @@ function Todo(){
     return(
         <>
         <div className="container">
-            <div>
+            <div className="taskInput">
                 <input type="text" placeholder="Type Your Task" value={todo} onChange={getTask}/>
                 <button onClick={getList}>Add</button>
             </div>
-            <div>
+            <div className="TaskList">
                 {newTodo.map((currVal, index) => {
                     return(
                         <>
                             <div className="list">
                                 <p>{currVal}</p>
-                                <i class="fa-regular fa-trash-can" onClick={ () => deleteTask(index)}></i>
+                                <i id="deleteIcon" class="fa-regular fa-trash-can" onClick={ () => deleteTask(index)}></i>
+                                
 
                             </div>
                         </>
